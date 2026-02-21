@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Praxcor Projects | Design Firm for Oil & Gas</title>
+  <title>Praxcor Projects | Oil & Gas Design Solutions</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Praxcor Projects</div>
+    <div class="logo">
+      <img src="logo.png" alt="Praxcor Projects Logo" />
+      <span>Praxcor Projects</span>
+    </div>
     <nav>
       <ul>
         <li><a href="#home" class="active">Home</a></li>
@@ -20,39 +27,47 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section id="home" class="section home">
-    <div class="hero-content">
-      <h1>Designing the Future of Energy</h1>
-      <p>Innovative design solutions for oil and gas infrastructure across the globe.</p>
-      <button onclick="scrollToSection('about')">Learn More</button>
+    <div class="hero-overlay"></div>
+    <div class="hero-center">
+      <div class="hero-logo">
+        <!-- Replace with your actual logo -->
+        <img src="logo.png" alt="Praxcor Logo" />
+      </div>
+      <h1 class="hero-title">Praxcor Projects</h1>
+      <h2 class="hero-subtitle">Innovative Design for the Energy of Tomorrow</h2>
+      <div class="hero-btns">
+        <button onclick="scrollToSection('about')">Discover More</button>
+        <button onclick="scrollToSection('services')" class="outline">Our Work</button>
+      </div>
     </div>
   </section>
 
   <section id="about" class="section about">
     <h2>About Praxcor Projects</h2>
-    <p>Praxcor Projects is a leading design and engineering consultancy serving the oil and gas sector. Our expert team merges innovation, safety, and sustainability to craft advanced solutions for the world’s most challenging energy projects.</p>
+    <p>Praxcor Projects is a leading design and engineering consultancy specializing in SAGD and conventional oil and gas developments. We focus on delivering advanced, safe, and sustainable designs for processing facilities, pipelines, and modular systems across the globe.</p>
   </section>
 
   <section id="mission" class="section mission">
     <h2>Our Mission</h2>
-    <p>To deliver design excellence and engineering precision while driving sustainable progress in the energy industry.</p>
-    <p>We believe in building a cleaner, smarter, and more efficient energy future.</p>
+    <p>To revolutionize energy design through sustainability, innovation, and precision — powering the world’s oil and gas infrastructure responsibly.</p>
   </section>
 
   <section id="services" class="section services">
     <h2>Our Services</h2>
     <div class="service-grid">
       <div class="service">
-        <h3>Engineering Design</h3>
-        <p>Comprehensive design packages for onshore and offshore facilities.</p>
+        <h3>Facility Design</h3>
+        <p>Detailed design and engineering for SAGD, upstream & downstream facilities.</p>
       </div>
       <div class="service">
-        <h3>Project Management</h3>
-        <p>Expert handling of complex oil and gas projects from concept to completion.</p>
+        <h3>Pipelines & Infrastructure</h3>
+        <p>Comprehensive design and route optimization for safe, efficient transport.</p>
       </div>
       <div class="service">
-        <h3>Consulting & Feasibility</h3>
-        <p>Strategic insights and studies to optimize operations and sustainability.</p>
+        <h3>Project Consulting</h3>
+        <p>Guiding clients through concept, feasibility, and sustainability assessment.</p>
       </div>
     </div>
   </section>
@@ -69,7 +84,7 @@
   </section>
 
   <footer>
-    <p>© 2024 Praxcor Projects | All Rights Reserved</p>
+    <p>© 2024 Praxcor Projects | Engineering the Future of Energy</p>
   </footer>
 
   <script src="script.js"></script>
