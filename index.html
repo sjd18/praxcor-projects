@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praxcor Projects | Design Firm for Oil & Gas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Praxcor Projects</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section home">
+    <div class="hero-content">
+      <h1>Designing the Future of Energy</h1>
+      <p>Innovative design solutions for oil and gas infrastructure across the globe.</p>
+      <button onclick="scrollToSection('about')">Learn More</button>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Praxcor Projects</h2>
+    <p>Praxcor Projects is a leading design and engineering consultancy serving the oil and gas sector. Our expert team merges innovation, safety, and sustainability to craft advanced solutions for the world’s most challenging energy projects.</p>
+  </section>
+
+  <section id="mission" class="section mission">
+    <h2>Our Mission</h2>
+    <p>To deliver design excellence and engineering precision while driving sustainable progress in the energy industry.</p>
+    <p>We believe in building a cleaner, smarter, and more efficient energy future.</p>
+  </section>
+
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Engineering Design</h3>
+        <p>Comprehensive design packages for onshore and offshore facilities.</p>
+      </div>
+      <div class="service">
+        <h3>Project Management</h3>
+        <p>Expert handling of complex oil and gas projects from concept to completion.</p>
+      </div>
+      <div class="service">
+        <h3>Consulting & Feasibility</h3>
+        <p>Strategic insights and studies to optimize operations and sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="contact-email">Email: <strong>info@praxcorprojects.com</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2024 Praxcor Projects | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
