@@ -155,7 +155,7 @@ p {
 /* SERVICES */
 #services {
     background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)),
-        url('https://as1.ftcdn.net/v2/jpg/06/46/97/56/1000_F_646975685_RHyNTOqNi07adnumeASrvcIO1k8BPfst.jpg')
+        url('https://png.pngtree.com/thumb_back/fh260/background/20240426/pngtree-a-closeup-of-pipelines-in-oil-and-gas-engineering-and-industrial-image_15671495.jpg')
         center/cover no-repeat;
     flex-direction: column;
     padding: 5rem 5%;
