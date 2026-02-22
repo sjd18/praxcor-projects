@@ -240,125 +240,118 @@ footer {
     color: #888;
 }
 
-/* ===== Mobile / Responsive ===== */
+/* ===== Mobile / Responsive (ADDED) ===== */
 
-/* Make sure content isn't hidden behind fixed header when jumping to anchors */
+/* Make sure anchor jumps aren't hidden behind the fixed header */
 html {
-  scroll-padding-top: 90px; /* adjust if your header height changes */
+    scroll-padding-top: 90px;
 }
 
 /* Hamburger hidden on desktop */
 .nav-toggle {
-  display: none;
+    display: none;
 }
 
-/* Base safety: prevent horizontal scroll on small screens */
+/* Prevent accidental horizontal scrolling on small screens */
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 @media (max-width: 900px) {
-  /* Slightly tighter desktop->tablet transition (optional) */
-  #home h1 { font-size: 3.5rem; }
-  #home p  { font-size: 1.2rem; }
+    #home h1 { font-size: 3.5rem; }
+    #home p  { font-size: 1.2rem; }
 
-  .content-half { padding: 3rem; }
-  h2 { font-size: 2.4rem; }
+    .content-half { padding: 3rem; }
+    h2 { font-size: 2.4rem; }
 }
 
 @media (max-width: 768px) {
-  /* NAV: hamburger + slide-down menu */
-  nav {
-    justify-content: space-between;
-    gap: 1rem;
-  }
+    nav {
+        justify-content: space-between;
+        gap: 1rem;
+    }
 
-  .nav-toggle {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-    width: 44px;
-    height: 44px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.25);
-    cursor: pointer;
-  }
+    .nav-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.25);
+        cursor: pointer;
+    }
 
-  .nav-toggle .bar {
-    width: 22px;
-    height: 2px;
-    background: var(--text-light);
-    display: block;
-    margin: 0 auto;
-  }
+    .nav-toggle .bar {
+        width: 22px;
+        height: 2px;
+        background: var(--text-light);
+        display: block;
+        margin: 0 auto;
+    }
 
-  .nav-links {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    background: rgba(11, 25, 44, 0.98);
-    flex-direction: column;
-    gap: 0;
-    padding: 0.75rem 5%;
-    display: none; /* closed by default */
-    border-top: 1px solid rgba(255,255,255,0.12);
-  }
+    .nav-links {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background: rgba(11, 25, 44, 0.98);
+        flex-direction: column;
+        gap: 0;
+        padding: 0.75rem 5%;
+        display: none;
+        border-top: 1px solid rgba(255,255,255,0.12);
+    }
 
-  .nav-links li {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
+    .nav-links li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
 
-  .nav-links li:last-child {
-    border-bottom: none;
-  }
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
 
-  /* opened state (toggled by JS) */
-  header.nav-open .nav-links {
-    display: flex;
-  }
+    header.nav-open .nav-links {
+        display: flex;
+    }
 
-  /* HERO */
-  #home h1 { font-size: 2.6rem; }
-  #home p  { font-size: 1.05rem; }
+    #home h1 { font-size: 2.6rem; }
+    #home p  { font-size: 1.05rem; }
 
-  /* STACK the 50/50 sections vertically on mobile */
-  section {
-    flex-direction: column;
-    min-height: auto;
-  }
+    section {
+        flex-direction: column;
+        min-height: auto;
+    }
 
-  .content-half {
-    padding: 2.5rem 8%;
-  }
+    .content-half {
+        padding: 2.5rem 8%;
+    }
 
-  .image-half {
-    min-height: 240px;
-  }
+    .image-half {
+        min-height: 240px;
+    }
 
-  /* Services cards already responsive; just reduce padding */
-  #services {
-    padding: 3rem 6%;
-  }
+    #services {
+        padding: 3rem 6%;
+    }
 
-  .service-text {
-    padding: 1.5rem;
-  }
+    .service-text {
+        padding: 1.5rem;
+    }
 
-  /* Contact */
-  #contact {
-    padding: 3rem 6%;
-  }
+    #contact {
+        padding: 3rem 6%;
+    }
 
-  .contact-container {
-    padding: 2rem;
-  }
+    .contact-container {
+        padding: 2rem;
+    }
 }
 
 @media (max-width: 420px) {
-  #home h1 { font-size: 2.1rem; }
-  h2 { font-size: 2rem; }
-  p { font-size: 1rem; }
+    #home h1 { font-size: 2.1rem; }
+    h2 { font-size: 2rem; }
+    p { font-size: 1rem; }
 }
