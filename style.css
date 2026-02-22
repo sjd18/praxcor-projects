@@ -74,7 +74,7 @@ nav {
 #home {
     height: 100vh;
     background: linear-gradient(rgba(11, 25, 44, 0.6), rgba(11, 25, 44, 0.6)),
-        url('https://www.canadianenergycentre.ca/wp-content/uploads/2021/05/sunrise-bp-1920x1080-c-default.jpg')
+        url(https://media.istockphoto.com/id/184983868/photo/drilling-for-oil.jpg?s=612x612&w=0&k=20&c=EpfT0sA0jd0lCNPhNUJjLy2eRpYkxIjDOwEsjuznHqc=')
         center/cover no-repeat;
     display: flex;
     flex-direction: column;
