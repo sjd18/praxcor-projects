@@ -70,13 +70,12 @@ nav {
     color: var(--accent);
 }
 
-/* HERO (HOME) */
+/* HERO IMAGE */
 #home {
     height: 100vh;
-    background: 
-      linear-gradient(rgba(11,25,44,0.65), rgba(11,25,44,0.7)),
-      url('https://tse3.mm.bing.net/th/id/OIP.VxysZ3U0sFPBf_aLw431CgHaDw?rs=1&pid=ImgDetMain&o=7&rm=3')
-      center/cover no-repeat;
+    background: linear-gradient(rgba(11, 25, 44, 0.6), rgba(11, 25, 44, 0.6)),
+        url('https://www.canadianenergycentre.ca/wp-content/uploads/2021/05/sunrise-bp-1920x1080-c-default.jpg')
+        center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +87,7 @@ nav {
 #home h1 {
     font-size: 5rem;
     font-weight: 900;
-    text-shadow: 3px 3px 12px rgba(0,0,0,0.6);
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
     margin-bottom: 1rem;
 }
 
@@ -96,10 +95,9 @@ nav {
     font-size: 1.5rem;
     color: var(--accent);
     font-weight: 600;
-    letter-spacing: 1px;
 }
 
-/* GENERAL SECTIONS */
+/* SECTION LAYOUT */
 section {
     min-height: 80vh;
     display: flex;
@@ -120,13 +118,28 @@ section {
     background-position: center;
 }
 
+/* HEADINGS */
+h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
 /* ABOUT */
 #about {
     background-color: var(--bg-light);
 }
 
 #about .image-half {
-    background-image: url('https://img.freepik.com/premium-photo/steel-long-pipes-pipe-elbow-station-oil-factory-during-refinery-petrochemistry-industry_478515-7833.jpg?w=2000');
+    background-image: url('https://as1.ftcdn.net/v2/jpg/06/46/97/56/1000_F_646975685_RHyNTOqNi07adnumeASrvcIO1k8BPfst.jpg');
 }
 
 /* MISSION */
@@ -136,14 +149,14 @@ section {
 }
 
 #mission .image-half {
-    background-image: url('https://i.pinimg.com/736x/97/4c/ed/974ced12dd735a4231f56975f40d3938.jpg');
+    background-image: url('https://thumbs.dreamstime.com/b/steel-long-pipes-crude-oil-factory-sunset-gas-pipeline-background-high-quality-photo-ai-generated-338472546.jpg');
 }
 
 /* SERVICES */
 #services {
     background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)),
-    url('https://as1.ftcdn.net/v2/jpg/06/46/97/56/1000_F_646975685_RHyNTOqNi07adnumeASrvcIO1k8BPfst.jpg')
-    center/cover no-repeat;
+        url('https://as1.ftcdn.net/v2/jpg/06/46/97/56/1000_F_646975685_RHyNTOqNi07adnumeASrvcIO1k8BPfst.jpg')
+        center/cover no-repeat;
     flex-direction: column;
     padding: 5rem 5%;
     color: var(--text-light);
@@ -166,6 +179,7 @@ section {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -225,3 +239,4 @@ footer {
     font-size: 0.9rem;
     color: #888;
 }
+
