@@ -1,345 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praxcor Projects | Oil & Gas Design</title>
-    <style>
-        /* Base Styles & Variables */
-        :root {
-            --primary: #0b192c;
-            --secondary: #1a365d;
-            --accent: #f59e0b;
-            --text-light: #ffffff;
-            --text-dark: #1f2937;
-            --bg-light: #f3f4f6;
-        }
+<header>
+    <nav>
+        <div class="logo">Praxcor <span>Projects</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            scroll-behavior: smooth;
-        }
+<section id="home" style="
+    height: 100vh;
+    background: linear-gradient(rgba(11,25,44,0.6), rgba(11,25,44,0.6)),
+    url('https://tse3.mm.bing.net/th/id/OIP.VxysZ3U0sFPBf_aLw431CgHaDw?rs=1&pid=ImgDetMain&o=7&rm=3')
+    center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;">
+    <h1>Praxcor Projects</h1>
+    <p style="color: #f59e0b;">Advanced Oil & Gas Design Engineering</p>
+</section>
 
-        body {
-            background-color: var(--primary);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+<section id="about">
+    <div class="content-half">
+        <h2>Who We Are</h2>
+        <p>Founded on the principles of precision and reliability, Praxcor Projects is a premier design firm dedicated to the energy sector. We specialize in transforming complex geological and infrastructural challenges into streamlined, robust engineering realities.</p>
+        <p>Our team consists of industry veterans, innovative structural engineers, and process design experts who understand the unique demands of upstream, midstream, and downstream operations.</p>
+    </div>
+    <div class="image-half" style="
+        background: url('https://img.freepik.com/premium-photo/steel-long-pipes-pipe-elbow-station-oil-factory-during-refinery-petrochemistry-industry_478515-7833.jpg?w=2000')
+        center/cover no-repeat;">
+    </div>
+</section>
 
-        /* Navigation - Aligned Top Left */
-        header {
-            background-color: rgba(11, 25, 44, 0.95);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
+<section id="mission">
+    <div class="content-half">
+        <h2>Our Mission</h2>
+        <p>To deliver safe, highly efficient, and sustainable design engineering that maximizes operational excellence while strictly adhering to rigorous regulatory and environmental standards.</p>
+        <p>We aim to protect our clients' assets, ensure workforce safety, and support the communities in which they operate through uncompromising design integrity and technological foresight.</p>
+    </div>
+    <div class="image-half" style="
+        background: url('https://i.pinimg.com/736x/97/4c/ed/974ced12dd735a4231f56975f40d3938.jpg')
+        center/cover no-repeat;">
+    </div>
+</section>
 
-        nav {
-            display: flex;
-            justify-content: flex-start; /* Aligns items to the left */
-            align-items: center;
-            padding: 1rem 5%;
-            gap: 3rem; /* Space between logo and links */
-        }
-
-        .logo {
-            color: var(--text-light);
-            font-size: 1.5rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .nav-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero Section - Company Name Centered w/ Module Background */
-        #home {
-            height: 100vh;
-            /* High-quality oil and gas module background */
-            background: linear-gradient(rgba(11, 25, 44, 0.6), rgba(11, 25, 44, 0.6)), 
-                        url('https://images.unsplash.com/photo-1580982333060-b8519bb68be4?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: var(--text-light);
-        }
-
-        #home h1 {
-            font-size: 5rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-            margin-bottom: 1rem;
-        }
-
-        #home p {
-            font-size: 1.5rem;
-            color: var(--accent);
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        /* Full Width Sections to eliminate blank space */
-        section {
-            min-height: 80vh; /* Ensures sections take up most of the screen */
-            display: flex;
-            align-items: stretch;
-        }
-
-        .content-half {
-            flex: 1;
-            padding: 5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .image-half {
-            flex: 1;
-            background-size: cover;
-            background-position: center;
-        }
-
-        h2 {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            border-bottom: 4px solid var(--accent);
-            display: inline-block;
-            padding-bottom: 0.5rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* About Section */
-        #about {
-            background-color: var(--bg-light);
-        }
-        
-        #about .image-half {
-            background-image: url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop'); /* Engineers looking at plans */
-        }
-
-        /* Mission Section */
-        #mission {
-            background-color: var(--text-light);
-            flex-direction: row-reverse; /* Swaps image to the right */
-        }
-
-        #mission .image-half {
-            background-image: url('https://images.unsplash.com/photo-1620021500052-169f44937217?q=80&w=2070&auto=format&fit=crop'); /* Facility at sunset */
-        }
-
-        /* Services Section */
-        #services {
-            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), 
-                        url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2066&auto=format&fit=crop') center/cover;
-            flex-direction: column;
-            padding: 5rem 5%;
-            color: var(--text-light);
-            text-align: center;
-        }
-
-        #services h2 {
-            color: var(--text-light);
-            margin: 0 auto 3rem auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            width: 100%;
-        }
-
-        .service-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 0;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .service-img {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .service-text {
-            padding: 2rem;
-        }
-
-        .service-text h3 {
-            color: var(--accent);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        /* Contact Section */
-        #contact {
-            background-color: var(--primary);
-            color: var(--text-light);
-            padding: 5rem 5%;
-            text-align: center;
-            display: block; /* Overrides flex to center easily */
-            min-height: auto;
-        }
-
-        #contact h2 {
-            color: var(--text-light);
-        }
-
-        .contact-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-top: 3rem;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 3rem;
-            border-top: 4px solid var(--accent);
-        }
-
-        .contact-info h3 {
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
-
-        footer {
-            margin-top: 4rem;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <nav>
-            <div class="logo">Praxcor <span>Projects</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1>Praxcor Projects</h1>
-        <p>Advanced Oil & Gas Design Engineering</p>
-    </section>
-
-    <section id="about">
-        <div class="content-half">
-            <h2>Who We Are</h2>
-            <p>Founded on the principles of precision and reliability, Praxcor Projects is a premier design firm dedicated to the energy sector. We specialize in transforming complex geological and infrastructural challenges into streamlined, robust engineering realities.</p>
-            <p>Our team consists of industry veterans, innovative structural engineers, and process design experts who understand the unique demands of upstream, midstream, and downstream operations.</p>
-        </div>
-        <div class="image-half"></div>
-    </section>
-
-    <section id="mission">
-        <div class="content-half">
-            <h2>Our Mission</h2>
-            <p>To deliver safe, highly efficient, and sustainable design engineering that maximizes operational excellence while strictly adhering to rigorous regulatory and environmental standards.</p>
-            <p>We aim to protect our clients' assets, ensure workforce safety, and support the communities in which they operate through uncompromising design integrity and technological foresight.</p>
-        </div>
-        <div class="image-half"></div>
-    </section>
-
-    <section id="services">
-        <h2>Core Capabilities</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1565515268480-137b03657b98?q=80&w=2070&auto=format&fit=crop" alt="Facility Engineering" class="service-img">
-                <div class="service-text">
-                    <h3>Facility Engineering</h3>
-                    <p>Comprehensive layout and design for refineries, processing plants, and storage terminals. We ensure optimal footprint utilization and peak safety protocols.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1621501103258-3e23ddb57b78?q=80&w=2070&auto=format&fit=crop" alt="Pipeline Design" class="service-img">
-                <div class="service-text">
-                    <h3>Pipeline Networks</h3>
-                    <p>Advanced routing, stress analysis, and material selection for midstream transportation, ensuring longevity and leak-prevention under high-pressure scenarios.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Process Simulation" class="service-img">
-                <div class="service-text">
-                    <h3>Process Simulation</h3>
-                    <p>State-of-the-art computational modeling to optimize fluid dynamics, thermodynamic processes, and separation efficiency prior to physical construction.</p>
-                </div>
+<section id="services">
+    <h2>Core Capabilities</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="https://img.freepik.com/premium-photo/steel-long-pipes-pipe-elbow-station-oil-factory-during-refinery-petrochemistry-industry_478515-7833.jpg?w=2000" alt="Facility Engineering" class="service-img">
+            <div class="service-text">
+                <h3>Facility Engineering</h3>
+                <p>Comprehensive layout and design for refineries, processing plants, and storage terminals. We ensure optimal footprint utilization and peak safety protocols.</p>
             </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p style="color: #ccc; max-width: 600px; margin: 0 auto;">Ready to discuss your next major infrastructure project? Reach out to our engineering teams across North America and Europe.</p>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Global Headquarters</h3>
-                <p>Suite 400, Energy Square</p>
-                <p>Calgary, AB T2P 3C4</p>
-            </div>
-            <div class="contact-info">
-                <h3>Direct Contact</h3>
-                <p>Email: engineering@praxcorprojects.com</p>
-                <p>Phone: +1 (800) 555-0199</p>
-            </div>
-            <div class="contact-info">
-                <h3>Operating Hours</h3>
-                <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
-                <p>24/7 Emergency Support Available</p>
+        <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.0b2658800493f160e0cdfc8e9525bd63?rik=LrmcB%2btTnvl%2bKw&riu=http%3a%2f%2ftrinity-bridge.com%2fsites%2fall%2fthemes%2ftb%2fimages%2fpiping.jpg&ehk=g4j938kw3aBYdTSQI%2fByGYEo6qeUf7nzu4LL4mHNh%2fQ%3d&risl=&pid=ImgRaw&r=0" alt="Pipeline Design" class="service-img">
+            <div class="service-text">
+                <h3>Pipeline Networks</h3>
+                <p>Advanced routing, stress analysis, and material selection for midstream transportation, ensuring longevity and leak-prevention under high-pressure scenarios.</p>
             </div>
         </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Process Simulation" class="service-img">
+            <div class="service-text">
+                <h3>Process Simulation</h3>
+                <p>State-of-the-art computational modeling to optimize fluid dynamics, thermodynamic processes, and separation efficiency prior to physical construction.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <footer>
-            &copy; 2026 Praxcor Projects Design Firm. All rights reserved.
-        </footer>
-    </section>
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <p style="color: #ccc; max-width: 600px; margin: 0 auto;">Ready to discuss your next major infrastructure project? Reach out to our engineering teams across North America and Europe.</p>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Global Headquarters</h3>
+            <p>Suite 400, Energy Square</p>
+            <p>Calgary, AB T2P 3C4</p>
+        </div>
+        <div class="contact-info">
+            <h3>Direct Contact</h3>
+            <p>Email: engineering@praxcorprojects.com</p>
+            <p>Phone: +1 (800) 555-0199</p>
+        </div>
+        <div class="contact-info">
+            <h3>Operating Hours</h3>
+            <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
+            <p>24/7 Emergency Support Available</p>
+        </div>
+    </div>
 
-</body>
-</html>
+    <footer>
+        &copy; 2026 Praxcor Projects Design Firm. All rights reserved.
+    </footer>
+</section>
